@@ -4,13 +4,13 @@
         "_default_": {
             "dynamic_templates": [
             {
-            	"notanalyzed": {
-        		  "match_pattern": "regex",
-                  "match":  "^id|.*_id|.*_image|tags|type|@timestamp|@version$", 
-                  "mapping": {
-                      "index": "not_analyzed",
-                      "include_in_all": false
-                  }
+                "notanalyzed": {
+                "match_pattern": "regex",
+                "match":  "^id|.*_id|.*_image|tags|type|@timestamp|@version$", 
+                "mapping": {
+                    "index": "not_analyzed",
+                    "include_in_all": false
+                }
                }
             },
             {
